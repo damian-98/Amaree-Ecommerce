@@ -13,7 +13,25 @@ app.use(
 );
 
 const port = process.env.SERVER_PORT || 5005;
+// const line_items = req.body.cartItems.map((item) => {
+//   return {
+//     price_data: {
+//       currency: "usd",
+//       product_data: {
+//         name: item.name,
+//         images: [item.images],
+//       },
 
+//       unit_amount: item.price * 100,
+//     },
+//     quantity: item.cartQuanity,
+
+//     adjustable_quantity: {
+//       enabled: true,
+//       maximum: 999,
+//     },
+//   };
+// });
 app.get("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: [
