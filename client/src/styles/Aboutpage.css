@@ -1,0 +1,58 @@
+    #About-Page-Title {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Satisfy', cursive;
+    }
+
+    #about-picture {
+        margin-top: 150px;
+        margin-left: 30px;
+        position: absolute;
+        width: 620;
+        height: 770;
+        top: 0;
+    }
+
+@media screen and (max-width: 1200px) {
+
+    #about-picture {
+        margin-top: 90px;
+        position: absolute;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    #text {
+        color: white;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 17px;
+        padding-top: 700px;
+    }
+}
+
+    #about-text-section {
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .contact{
+        min-height: 100vh;
+        background: url("./components/img/wallpaper.png");
+    }   
+
+    h1 {
+        padding-top: 100px
+    }
+
+    p {
+        color: white;
+        margin-left: 620px;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 200px;
+    }

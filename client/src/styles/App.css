@@ -1,0 +1,9 @@
+.App{
+  background-color: rgba(216, 112, 147, 0.746);
+  min-height: 100vh;
+}
+
+.home{ 
+  min-height: 93vh;
+  background: url("../../public/img/Home_Wallpaper.jpeg") ;
+}
