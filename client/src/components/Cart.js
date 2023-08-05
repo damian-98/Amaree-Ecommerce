@@ -1,6 +1,5 @@
 import React from "react";
 import { BsCartXFill } from "react-icons/bs";
-import axios from "axios";
 import "../styles/Cart.css";
 
 const Cart = ({
@@ -23,17 +22,22 @@ const Cart = ({
     style: "currency",
   });
 
-  const handleCheckout = () => {
-    axios.get("http://localhost:5005/checkout").then(
-      (response) => {
-        if (response.status.valueOf() === 200) {
-          window.location.href = "http://localhost:5005/checkout";
-        }
+  const handleCheckout = async () => {
+    await fetch("http://localhost:5005/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-      (error) => {
-        console.log(error);
-      }
-    );
+      body: JSON.stringify({ cartItems: cartItems }),
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        if (response.url) {
+          window.location.assign(response.url); // Forwarding user to Stripe
+        }
+      });
   };
 
   const CartDisplay = () => (

@@ -1,7 +1,7 @@
 const data = {
   productItems: [
     {
-      id: "price_1NZi1KJgwVcyi1GTavyVuXo3",
+      id: "price_1NbZYxJgwVcyi1GT1pidLJUm",
       name: "Straight",
       price: "90.5",
       image:
@@ -9,14 +9,14 @@ const data = {
     },
 
     {
-      id: "price_1NZib4JgwVcyi1GT6j4s9tgB",
+      id: "price_1NbZYYJgwVcyi1GTHIEkxRjg",
       name: "Curly",
       price: "95.8",
       image:
         "https://cdn.shopify.com/s/files/1/0006/0607/6981/products/4_4e4b1850-a5e6-402b-bd59-3f9946ace4e4.jpg?v=1652348022",
     },
     {
-      id: "price_1NOATsJgwVcyi1GTKrIxLIVA",
+      id: "price_1NbZZFJgwVcyi1GTyocNJRwB",
       name: "Body Wave",
       price: "100.2",
       image:
