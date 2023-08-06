@@ -36,7 +36,7 @@ const Shop = ({ productItems, handleAddProduct }) => {
   };
 
   return (
-    <div className="App">
+    <div className="product-page">
       <div className="products">
         {productItems.map((productItem) => (
           <div key={productItem.id} className="card">

@@ -83,8 +83,13 @@ app.post("/checkout", async (req, res) => {
     },
     line_items: line_items,
     mode: "payment",
+    // discounts: [
+    //   {
+    //     coupon: "p2rm4EDP",
+    //   },
+    // ],
     success_url: `${process.env.CLIENT_URL}/success`,
-    cancel_url: `${process.env.CLIENT_URL}/cart`,
+    cancel_url: `${process.env.CLIENT_URL}/cancel`,
     automatic_tax: { enabled: true },
   });
 

@@ -3,6 +3,7 @@ import Home from "../Home";
 import Shop from "../Shop";
 import Cart from "../Cart";
 import Success from "../SuccessPage";
+import Cancel from "../CancelPage";
 import NotFound from "../NotFound";
 import { Route, Switch } from "react-router-dom";
 
@@ -35,6 +36,9 @@ const Routes = ({
         </Route>
         <Route exact path="/success">
           <Success />
+        </Route>
+        <Route exact path="/cancel">
+          <Cancel />
         </Route>
         <Route exact path="*">
           <NotFound />

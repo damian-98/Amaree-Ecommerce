@@ -1,4 +1,7 @@
 import React from "react";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+import AddIcon from "@material-ui/icons/Add";
+import RemoveIcon from "@material-ui/icons/Remove";
 import { BsCartXFill } from "react-icons/bs";
 import "../styles/Cart.css";
 
@@ -35,8 +38,9 @@ const Cart = ({
       })
       .then((response) => {
         if (response.url) {
-          window.location.assign(response.url); // Forwarding user to Stripe
+          window.location.assign(response.url); // Forwarding user to Stripe checkout
         }
+        localStorage.clear(); // Clear cart items
       });
   };
 
@@ -79,19 +83,21 @@ const Cart = ({
             />
             <div className="cart-items-name">{item.name}</div>
             <div className="cart-items-function">
-              <button
-                className="cart-items-remove"
-                onClick={() => handleRemoveProduct(item)}
-              >
-                -
-              </button>{" "}
-              <span className="cart-items-quantity"> {item.quantity}</span>
-              <button
-                className="cart-items-add"
-                onClick={() => handleAddProduct(item)}
-              >
-                +
-              </button>{" "}
+              <ButtonGroup>
+                <button
+                  className="cart-items-remove"
+                  onClick={() => handleRemoveProduct(item)}
+                >
+                  <RemoveIcon fontSize="small" />
+                </button>{" "}
+                <span className="cart-items-quantity"> {item.quantity}</span>
+                <button
+                  className="cart-items-add"
+                  onClick={() => handleAddProduct(item)}
+                >
+                  <AddIcon fontSize="small" />
+                </button>{" "}
+              </ButtonGroup>
             </div>
 
             <div className="cart-items-price">
