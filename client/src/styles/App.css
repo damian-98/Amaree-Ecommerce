@@ -6,3 +6,9 @@
   min-height: 93vh;
   background: url("../../public/img/Home_Wallpaper.jpeg") ;
 }
+
+@media screen and (max-width:2000px) and (min-width:100px){
+  .home {
+    background-size: 60% 93vh;
+  }
+}

@@ -12,22 +12,6 @@
     padding-top: 60px;
 }
 
-.warning {
-    height: 40px;
-    width: 300px;
-    position: absolute;
-    right: 0;
-    top: 10%;
-    background-color: black;
-    color: white;
-    font-size: 1.1rem;
-    padding: 8px;
-    margin-top: -5px;
-    text-align: center;
-    margin-right: 10px;
-    border-radius: 50px;
-}
-
 .card{
     width: 300px;
     height: 400px;
@@ -86,4 +70,29 @@
 
 .product-add-button:active {
     transform: translateY(2px)
+}
+
+@media screen and (max-width:990px) {
+.card {
+    margin: 40px;
+}
+
+.products {
+    width: 100%;
+}
+
+.product-image {
+    height: 100px;
+}
+
+.product-name {
+  font-size: 20px;
+}
+
+.select-dropdown {
+    margin: 5px 40px;
+    font-size: 12px;
+    bottom: 65px;
+    height: 220px;
+    }
 }
