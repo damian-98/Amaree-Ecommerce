@@ -20,7 +20,14 @@ const data = {
       name: "Body Wave",
       price: "100.2",
       image:
-        "https://cdn.shopify.com/s/files/1/0069/4321/1635/products/full-thick-Indian-human-hair-bundles-bouncy-Indian-hair_1800x1800.JPG?v=1646618951",
+        "https://shop.luvmehair.com/cdn/shop/products/6_95569a1c-9cc0-4c56-a9b6-1616ef21a899_1080x.jpg?v=1690430373",
+    },
+    {
+      id: "price_1NbZZFJgwVcyi1GTyocNJRwB",
+      name: "Body Wave",
+      price: "100.2",
+      image:
+        "https://shop.luvmehair.com/cdn/shop/products/6_95569a1c-9cc0-4c56-a9b6-1616ef21a899_1080x.jpg?v=1690430373",
     },
   ],
 };

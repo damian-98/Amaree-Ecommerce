@@ -44,6 +44,25 @@
     }
 }
 
+@media screen and (max-width:1000px) {
+#nav-links {
+        font-size: 15px;
+        position: relative;
+        color: #000;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    #shopping-cart {
+        position: relative;
+        font-size: 30px;
+        margin-right: 30px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
  /* Remove border from toggler */
  .navbar-toggler {
     border: 0 !important;

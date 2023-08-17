@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
-function Navigationbar({ size }) {
+const Navigationbar = ({ size }) => {
   return (
     <Navbar expand="lg" bg="light" fixed="top">
       <NavLink to="/" id="nav-logo">
@@ -32,16 +32,16 @@ function Navigationbar({ size }) {
             About
           </NavLink>
           <NavLink to="/cart" id="shopping-cart">
-            <div style={{ display: "block" }}>
-              <Badge color="secondary" badgeContent={size}>
+            <React.Fragment style={{ display: "block" }}>
+              <Badge id="badge" color="secondary" badgeContent={size}>
                 <AiOutlineShoppingCart />{" "}
               </Badge>
-            </div>
+            </React.Fragment>
           </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};
 
 export default Navigationbar;
