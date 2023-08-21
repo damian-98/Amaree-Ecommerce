@@ -145,6 +145,11 @@ span.cart-items-quantity{
     margin-right: 5px;
 }
 
+.cart-items-list {
+    margin-right: 5%;
+    margin-left: 15%;
+}
+
 .clear-cart-button {
     width: 70px;
     font-size: 12px;
@@ -162,17 +167,6 @@ span.cart-items-quantity{
 .cart-items-remove{
     font-size: 5px;
     margin-left: 10px;
-}
-
-.checkout {
-   margin-left: 1%;
-}
-
-.checkout-btn {      
-    width: 110px;
-    margin-left: 20px;
-    font-size: 12px;
-    position: relative;
 }
 
 .shopping-cart-logo {
@@ -197,6 +191,15 @@ span.cart-items-quantity {
 
 .cart-items-total-price-name {
     font-size: 18px;                                                                                                                  
+    }
+}
+
+@media screen and (max-width:903px) {
+.checkout-btn {
+        width: 110px;
+        margin-left: 90px;
+        font-size: 12px;
+        position: relative;
     }
 }
 

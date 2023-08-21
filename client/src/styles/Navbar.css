@@ -35,31 +35,9 @@
        color: palevioletred;
    }
 
-@media screen and (max-width:990px) { 
+@media screen and (max-width:990px) {
     #nav-logo {
-        color: #ff0080;
-        font-size: 30px;
-        font-family: 'Satisfy', cursive;
-        margin-left: 10px;
-    }
-}
-
-@media screen and (max-width:1000px) {
-#nav-links {
-        font-size: 15px;
-        position: relative;
-        color: #000;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-
-    #shopping-cart {
-        position: relative;
-        font-size: 30px;
-        margin-right: 30px;
-        text-decoration: none;
-        color: #000;
+        margin-left: 20px;
     }
 }
 

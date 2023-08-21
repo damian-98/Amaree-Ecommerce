@@ -1,7 +1,3 @@
-/* .App{
-  min-height: 93vh;
-} */
-
 .home{ 
   min-height: 93vh;
   background: url("../../public/img/Home_Wallpaper.jpeg") ;
@@ -10,5 +6,11 @@
 @media screen and (max-width:2000px){
   .home {
     background-size: 60% 93vh;
+  }
+}
+
+@media screen and (max-width:990px) {
+  .home {
+    background-size: 100% 93vh;
   }
 }

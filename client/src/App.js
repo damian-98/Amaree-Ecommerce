@@ -3,7 +3,7 @@ import data from "./components/data/Data";
 import Navigationbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Routes from "./components/router/Routes";
-import "./styles/App.css";
+import "./styles/Home.css";
 import "./styles/Footer.css";
 
 const App = () => {
