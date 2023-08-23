@@ -1,6 +1,8 @@
 import React from "react";
 import Home from "../Home";
 import Shop from "../Shop";
+import Contact from "../Contact";
+import About from "../About";
 import Cart from "../Cart";
 import Success from "../SuccessPage";
 import Cancel from "../CancelPage";
@@ -25,6 +27,12 @@ const Routes = ({
             productItems={productItems}
             handleAddProduct={handleAddProduct}
           />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/about">
+          <About />
         </Route>
         <Route exact path="/cart">
           <Cart

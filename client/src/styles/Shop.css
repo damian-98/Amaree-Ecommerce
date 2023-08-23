@@ -97,7 +97,7 @@
     } */
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:880px) {
 .products {
     width: 25%;
     margin-left: 55px;
@@ -111,7 +111,7 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
     .products {
         width: 100%;
         display: grid;
