@@ -3,7 +3,7 @@
   background: url("../../public/img/Home_Wallpaper.jpeg") ;
 }
 
-@media screen and (max-width:2000px){
+@media screen and (max-width:1600px){
   .home {
     background-size: 60% 93vh;
   }

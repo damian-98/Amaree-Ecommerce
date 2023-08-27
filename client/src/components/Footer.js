@@ -4,14 +4,16 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="footer-copyright footer-background">
+    <footer>
       &copy; {new Date().getFullYear()} Beauty Bundles. All Rights Reserved
-      <NavLink to={{ pathname: "https://www.instagram.com/" }} target="_blank">
-        <div className="logo-color instagram-logo">
-          <BsInstagram />
-        </div>
+      <NavLink
+        to={{ pathname: "https://www.instagram.com/" }}
+        target="_blank"
+        className="logo-color instagram-logo"
+      >
+        <BsInstagram />
       </NavLink>
-    </section>
+    </footer>
   );
 };
 

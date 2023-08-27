@@ -1,7 +1,6 @@
 .product-page{
     background-color: rgba(216, 112, 147, 0.746);
-    min-height: 93vh;
-}
+ }
 
 .products{
     display: grid;

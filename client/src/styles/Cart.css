@@ -2,7 +2,7 @@
     margin: 0px auto;
     width: 100%;
     background-color: rgba(216, 112, 147, 0.746);
-    min-height:92vh;
+    min-height:100vh;
     border-radius: 5px;
 }
 
@@ -87,7 +87,7 @@ span.cart-items-quantity{
 
 .cart-items-total-price {
     display: flex;
-    padding-left: 70%;
+    padding-left: 71.50%;
     top: -25px;
     position: relative;
     font-weight: 700;
@@ -207,7 +207,7 @@ span.cart-items-quantity {
 .cart-items-list {
     margin-right: 1%;
     margin-left: 1%;
-}
+    }
 
 .checkout-btn {
     width: 110px;
@@ -215,4 +215,8 @@ span.cart-items-quantity {
     font-size: 12px;
     position: relative;
     }
+
+.cart-items-total-price {
+    margin-left:  18px;
+    }     
 }
