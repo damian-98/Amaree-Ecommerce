@@ -17,3 +17,23 @@ footer {
 .logo-color{
     color: black;
 }
+
+@media screen and (max-width:900px) {
+    footer {
+        font-size: 14px;
+    }
+
+    .instagram-logo {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer {
+        font-size: 13px;
+    } 
+
+    .instagram-logo {
+        font-size: 22px;
+    }
+}
